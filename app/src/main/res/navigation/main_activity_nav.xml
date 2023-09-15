@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navigationtechcareer.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/hometoA"
+            app:destination="@id/pageAFragment" />
+        <action
+            android:id="@+id/hometoX"
+            app:destination="@id/pageXFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageAFragment"
+        android:name="com.example.navigationtechcareer.PageAFragment"
+        android:label="fragment_page_a"
+        tools:layout="@layout/fragment_page_a" >
+        <action
+            android:id="@+id/atoB"
+            app:destination="@id/pageBFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageBFragment"
+        android:name="com.example.navigationtechcareer.PageBFragment"
+        android:label="fragment_page_b"
+        tools:layout="@layout/fragment_page_b" >
+        <action
+            android:id="@+id/btoY"
+            app:destination="@id/pageYFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageXFragment"
+        android:name="com.example.navigationtechcareer.PageXFragment"
+        android:label="fragment_page_x"
+        tools:layout="@layout/fragment_page_x" >
+        <action
+            android:id="@+id/xtoY"
+            app:destination="@id/pageYFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageYFragment"
+        android:name="com.example.navigationtechcareer.PageYFragment"
+        android:label="fragment_page_y"
+        tools:layout="@layout/fragment_page_y" >
+        <action
+            android:id="@+id/ytoHome"
+            app:destination="@id/homeFragment"
+            />
+    </fragment>
+</navigation>

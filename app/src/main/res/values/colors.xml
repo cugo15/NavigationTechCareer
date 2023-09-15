@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="homePage">#5A96CF</color>
+    <color name="aPage">#ED7D31</color>
+    <color name="bPage">#000000</color>
+    <color name="xPage">#A5A5A5</color>
+    <color name="yPage">#FFBD00</color>
+    <color name="buttonColor">#70309D</color>
+
+</resources>
